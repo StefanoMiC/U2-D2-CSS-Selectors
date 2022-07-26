@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1.main-title.strike {
+            text-decoration: line-through;
+        }
+
+        :where(a, input, button, label).btn {
+            display: inline-block;
+            vertical-align: middle;
+            height: 40px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        /* button.btn {
+            display: inline-block;
+            vertical-align: middle;
+            height: 40px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        } */
+
+        .call-to-action {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="myTitle" class="main-title strike">Awesome Title</h1>
+    <h1 id="myTitle" class="main-title">Awesome <span class="strike">Title</span></h1>
+
+
+    <a href="#" class="btn">Text</a>
+    <input class="btn" type="button" value="Text">
+    <button class="btn call-to-action">Text</button>
+    <label for="" class="btn">Text</label>
+</body>
+
+</html>
